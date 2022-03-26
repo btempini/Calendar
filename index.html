@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js">
+    </script>
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Bryans Schedule</h1>
+      <p class="lead">Dont procrastinate!</p>
+      <br><br><br>
+      <p id="currentDay" class="lead"></p>
+      <p id="currentDate" class="lead"></p>
+      <p id="now" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+
+      <div class="input-group row">
+        <span class="input-group-text hour">7:00AM</span>
+        <textarea id="inputInfo07" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="seven">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">8:00AM</span>
+        <textarea id="inputInfo08" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="eight">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">9:00AM</span>
+        <textarea id="inputInfo09" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="nine">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">10:00AM</span>
+        <textarea id="inputInfo10" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="ten">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">11:00AM</span>
+        <textarea id="inputInfo11" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="eleven">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">12:00PM</span>
+        <textarea id="inputInfo12" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="twelve">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">1:00PM</span>
+        <textarea id="inputInfo01" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="one">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">2:00AM</span>
+        <textarea id="inputInfo02" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="two">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">3:00PM</span>
+        <textarea id="inputInfo03" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="three">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">4:00PM</span>
+        <textarea id="inputInfo04" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="four">Submit ✅</button>
+      </div>
+
+      <div class="input-group row">
+        <span class="input-group-text hour">5:00PM</span>
+        <textarea id="inputInfo05" class="form-control description" aria-label="With textarea"></textarea>
+        <button class="btn btn-outline-secondary saveBtn" type="button" id="five">Submit ✅</button>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
