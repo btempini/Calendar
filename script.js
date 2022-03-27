@@ -9,7 +9,7 @@ $("#currentDay").text(dayWeek);
 $("#currentDate").text(today.format("MMM Do, YYYY"));
 
 // Show Current Time 
-// TRY TO MAKE THIS A TICKER?
+// TRY TO MAKE THIS A Real Time TICKER?
 var time = moment().format("hh:mm:ss");
 $("#now").text(time);
 
@@ -109,3 +109,21 @@ fourButton.addEventListener("click", function() {
 fiveButton.addEventListener("click", function() {
 	localStorage.setItem("inputInfoStorage05", input05.value);
 });
+
+// Past, Present, Future Color Setting
+function setTime(){
+    var sevenBlock = document.getElementById("inputInfo07");
+	var grabbingHourFor7am = moment();
+	
+	if (grabbingHourFor7am > moment().format("7")) {
+		sevenBlock.setAttribute("class", "past");
+	} else if (grabbingHourFor7am === moment().format("7")) {
+		sevenBlock.setAttribute("class", "present");
+	} else {
+		sevenBlock.setAttribute("class", "future")
+	}
+	console.log (sevenBlock)
+	console.log (grabbingHourFor7am)
+}
+
+// setTime()
