@@ -126,4 +126,4 @@ function setTime(){
 	console.log (grabbingHourFor7am)
 }
 
-// setTime()
+setTime()
