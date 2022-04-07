@@ -123,105 +123,95 @@ function setTime() {
   var threeBlock = document.getElementById("inputInfo03");
   var fourBlock = document.getElementById("inputInfo04");
   var fiveBlock = document.getElementById("inputInfo05");
-  var grabbingHourFor7am = moment();
-  var grabbingHourFor8am = moment();
-  var grabbingHourFor9am = moment();
-  var grabbingHourFor10am = moment();
-  var grabbingHourFor11am = moment();
-  var grabbingHourFor12pm = moment();
-  var grabbingHourFor01pm = moment();
-  var grabbingHourFor02pm = moment();
-  var grabbingHourFor03pm = moment();
-  var grabbingHourFor04pm = moment();
-  var grabbingHourFor05pm = moment();
 
-  if (grabbingHourFor7am > moment().format("7")) {
+  if (7 < moment().format("H")) {
     sevenBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor7am === moment().format("7")) {
+  } else if (7 == moment().format("H")) {
     sevenBlock.setAttribute("class", "present");
   } else {
     sevenBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor8am > moment().format("8")) {
+  if (8 < moment().format("H")) {
     eightBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor8am === moment().format("8")) {
+  } else if (8 == moment().format("H")) {
     eightBlock.setAttribute("class", "present");
   } else {
     eightBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor9am > moment().format("9")) {
+  if (9 < moment().format("H")) {
     nineBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor9am === moment().format("9")) {
+  } else if (9 == moment().format("H")) {
     nineBlock.setAttribute("class", "present");
   } else {
     nineBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor10am > moment().format("10")) {
+  if (10 < moment().format("H")) {
     tenBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor10am === moment().format("10")) {
+  } else if (10 == moment().format("H")) {
     tenBlock.setAttribute("class", "present");
   } else {
     tenBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor11am > moment().format("11")) {
+  if (11 < moment().format("H")) {
     elevenBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor11am === moment().format("11")) {
+  } else if (11 == moment().format("H")) {
     elevenBlock.setAttribute("class", "present");
   } else {
     elevenBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor12pm > moment().format("12")) {
+  if (12 < moment().format("H")) {
     twelveBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor12pm === moment().format("12")) {
+  } else if (12 == moment().format("H")) {
     twelveBlock.setAttribute("class", "present");
   } else {
     twelveBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor01pm > moment().format("13")) {
+  if (13 < moment().format("H")) {
     oneBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor01pm === moment().format("13")) {
+  } else if (13 == moment().format("H")) {
     oneBlock.setAttribute("class", "present");
   } else {
     oneBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor02pm > moment().format("14")) {
+  if (14 < moment().format("H")) {
     twoBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor02pm === moment().format("14")) {
+  } else if (14 == moment().format("H")) {
     twoBlock.setAttribute("class", "present");
   } else {
     twoBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor03pm > moment().format("15")) {
+  if (15 < moment().format("H")) {
     threeBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor03pm === moment().format("15")) {
+  } else if (15 == moment().format("H")) {
     threeBlock.setAttribute("class", "present");
   } else {
     threeBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor04pm > moment().format("16")) {
+  if (16 < moment().format("H")) {
     fourBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor04pm === moment().format("16")) {
+  } else if (16 == moment().format("H")) {
     fourBlock.setAttribute("class", "present");
   } else {
     fourBlock.setAttribute("class", "future");
   }
 
-  if (grabbingHourFor05pm > moment().format("17")) {
+  if (17 < moment().format("H")) {
     fiveBlock.setAttribute("class", "past");
-  } else if (grabbingHourFor05pm === moment().format("17")) {
+  } else if (17 == moment().format("H")) {
     fiveBlock.setAttribute("class", "present");
   } else {
     fiveBlock.setAttribute("class", "future");
   }
 }
-moment();
+
 setTime();
+console.log(moment().format("H"));
